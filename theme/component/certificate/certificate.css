@@ -1,0 +1,176 @@
+.container-certificate {
+  display: grid;
+  justify-items: center;
+  position: relative;
+  z-index: 0;
+
+
+}
+.certificate {
+  display: flex;
+  align-items: center;
+  
+  gap: 20px;
+
+}
+
+.container-certificate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./../../img/certificate-02.jpg');
+  /* ตรวจสอบว่าเส้นทางนี้ถูกต้อง */
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll;
+  background-size: cover !important;
+  display: block;
+  z-index: -1;
+  /* ให้อยู่ข้างหลังเนื้อหาหลัก */
+}
+
+
+
+.certificate-text {
+  font-size: 24px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  /* จัดข้อความให้อยู่ทางขวา */
+}
+
+.circular-cer img {
+  border-radius: 5px;
+  width: 270px;
+}
+
+.circular-cer {
+  background-color: #ffff
+  ;
+  height: 348px;
+  display: grid;
+  padding: 15px;
+  border-radius: 17px;
+  width: 100%;
+  border: 2px solid rgb(154, 112, 246);
+  /* เพิ่มสีกรอบ */
+  gap: 20px;
+  /* ระยะห่างระหว่างข้อความและรูปภาพภายใน circular-cer */
+  justify-content: space-evenly;
+  box-shadow: 0 0 8px rgba(133, 81, 245, .35);
+}
+
+.certificate-text p {
+  font-size: 41px;
+  color: rgb(127, 67, 255);
+  font-weight: 700;
+  font-style: italic;
+  /* ทำให้ข้อความเป็นตัวเอียง */
+}
+
+.certificate-text p:nth-child(2) {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+
+}
+.certificate-img{
+  text-align: center;
+}
+
+.certificate-text.right p:nth-child(1){
+ font-size: 25px;
+}
+
+.certificate-text.right p:nth-child(2){
+  font-size: 14px;
+ }
+@media (max-width: 763px) {
+  .container-certificate {
+    display: grid;
+    justify-items: center;
+    position: relative;
+    z-index: 0;
+  
+  
+  }
+  .certificate {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  
+  }
+  
+  .container-certificate::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./../../img/certificate-01.jpg');
+    /* ตรวจสอบว่าเส้นทางนี้ถูกต้อง */
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll;
+    background-size: cover !important;
+    display: block;
+    z-index: -1;
+    /* ให้อยู่ข้างหลังเนื้อหาหลัก */
+  }
+  
+  
+  
+  .certificate-text {
+    font-size: 24px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    /* จัดข้อความให้อยู่ทางขวา */
+  }
+  
+  .circular-cer img {
+    border-radius: 5px;
+    width: 150px !important;
+  }
+  
+  .circular-cer {
+    height: 100%;
+    display: flex;
+    padding: 15px;
+    border-radius: 17px;
+    width: 100%;
+    border: 2px solid rgb(154, 112, 246);
+    /* เพิ่มสีกรอบ */
+    gap: 20px;
+    /* ระยะห่างระหว่างข้อความและรูปภาพภายใน circular-cer */
+    justify-content: space-evenly;
+    box-shadow: 0 0 8px rgba(133, 81, 245, .35);
+  }
+  
+  .certificate-text p {
+    font-size: 32px;
+    color: rgb(127, 67, 255);
+    font-weight: 700;
+    font-style: italic;
+    /* ทำให้ข้อความเป็นตัวเอียง */
+  }
+  
+  .certificate-text p:nth-child(2) {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+  
+  }
+  .certificate-text.right p:nth-child(1){
+    font-size: 13px;
+   }
+   
+   .certificate-text.right p:nth-child(2){
+     font-size: 12px;
+    }
+}

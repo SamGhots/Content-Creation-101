@@ -1,0 +1,97 @@
+.rounded-border.course2 {
+  background-color: rgba(0, 0, 0, .38) !important;
+}
+
+.course2-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+
+}
+
+.course2-title-text p:nth-child(1) span {
+  font-size: 25px;
+  font-family: "Prompt", sans-serif !important;
+  text-shadow: 0 0 6px #350b8e;
+}
+
+
+.course2-title-text p:nth-child(2) span {
+  font-size: 19px;
+  font-family: "Prompt", sans-serif !important;
+
+}
+
+.course2-title-text p:nth-child(3) {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Prompt", sans-serif !important;
+  color: #ffff;
+}
+
+
+.course2-title-text p:nth-child(3) span {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Prompt", sans-serif !important;
+  color: #ffff;
+}
+
+/*com*/
+.course.mobile{
+  display: none;
+}
+.course2-title-img {}
+
+.course2-title-img.com{
+  width: 0px;
+position: relative;
+left: -545px;
+top: 38px;
+}
+.rounded-border.course2.com{
+  font-size: 23px;
+}
+
+.course2-title-text.com p:nth-child(1) span {
+  font-size: 45px;
+  line-height: 1;
+}
+.course2-title-text.com p:nth-child(2) span{
+  font-size: 21px;
+}
+.course2-title-text.com p:nth-child(3) {
+  padding-top: 10px;
+font-size: 30px;
+
+width: 484px;
+
+}
+.course2-title-text.com p:nth-child(3) span {
+  font-size: 30px;
+  }
+  @media (max-width:964px) {
+    .course {
+    display: block;
+    }
+  }
+@media (max-width: 763px) {
+  .course.mobile{
+    display: grid;
+  }
+  .course.com{
+    display: none;
+  }
+}
+@media (max-width: 371px) {
+
+  .course2-title-text p:nth-child(1) span {
+    font-size: clamp(18px, 6vw, 25px);
+  }
+
+
+  .course2-title-text p:nth-child(2) span {
+  
+    font-size: clamp(7px, 5vw, 19px);
+}
+}

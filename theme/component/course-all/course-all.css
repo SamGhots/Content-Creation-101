@@ -1,0 +1,280 @@
+.container-course-all{
+  display: grid;
+ 
+justify-items: center;
+  position: relative;
+  z-index: 0;
+  
+}
+.container-course-all::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./../../img/course-all-com.webp'); /* ตรวจสอบว่าเส้นทางนี้ถูกต้อง */
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll;
+  background-size: cover !important;
+  display: block;
+  z-index: -1; /* ให้อยู่ข้างหลังเนื้อหาหลัก */
+  background-attachment: fixed;
+}
+.course-all{
+  display: grid;
+  text-align: center;
+  width: 100%;
+
+ 
+}
+.course-all-title{
+  display: grid;
+  justify-items: center;
+  
+}
+.course-all-title p{
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Prompt", sans-serif;
+  color: #ffe300;
+  text-shadow: rgb(56, 10, 156) 0px 0px 7px;
+}
+.course-all-title p:nth-child(2){
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Prompt", sans-serif;
+  color: #ffffff;
+
+  justify-items: center;
+}
+
+
+
+
+.course-all-box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.course-all-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.course-text {
+  width: 300px;
+  background: linear-gradient(59deg, #ffe933, #fff8be);
+
+  padding: 10px; /* เพิ่ม padding รอบข้อความ */
+  width: 100%; /* ทำให้พื้นหลังสีครอบคลุมเต็มความกว้าง */
+  text-align: center; /* จัดข้อความให้อยู่กลาง */
+  
+
+}
+
+
+.course-all-item img{
+  width: 100%;
+  
+}
+
+.course-all.mobile{
+  display: none;
+}
+
+/*com*/
+.course-all-box-com {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+  background: linear-gradient(59deg, #ffe933, #fff8be);
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.course-all-box-com-item.img img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+.course-all-box-com-item.text {
+padding: 30px;
+  color: #333;
+  
+ 
+}
+
+.course-all-box-com-item.img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.course-all-title.com p:nth-child(1){
+  font-size: clamp(44px, 2vw, 54px);
+}
+.course-all-title.com p:nth-child(2){
+  width: 658px;
+  font-size: clamp(20px, 2vw, 30px);
+}
+.course-all-box-com-item.text p:nth-child(1) {
+  font-weight: 700;
+  font-size: clamp(22px, 2vw, 32px);
+  margin-bottom: 10px;
+}
+.course-all-box-com-item.text p:nth-child(2) {
+  font-size: clamp(15px, 2vw, 25px);
+
+ font-weight: 400;
+}
+@media (max-width:1900px) {
+  .container-course-all.section-p1.com{
+    padding: 40px 150px;
+    } 
+}
+@media (max-width:968px) {
+  .container-course-all.section-p1.com{
+    padding: 40px 100px;
+    } 
+}
+@media (max-width:855px) {
+  .container-course-all.section-p1.com{
+    padding: 40px 40px;
+    } 
+}
+
+
+/*com*/
+@media (max-width:1200px) {
+  .course-all-title.com p:nth-child(1){
+    font-size: 44px;
+  }
+  .course-all-title.com p:nth-child(2){
+    width: 658px;
+    font-size: 20px
+  }
+  .course-all-box-com-item.text p:nth-child(1) {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .course-all-box-com-item.text p:nth-child(2) {
+    font-size: 15px;
+  
+   font-weight: 400;
+  }
+}
+@media (max-width:763px) {
+
+  .container-course-all{
+    display: grid;
+   
+  justify-items: center;
+    position: relative;
+    z-index: 0;
+    
+  }
+  .container-course-all::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./../../img/content-all-01.jpg'); /* ตรวจสอบว่าเส้นทางนี้ถูกต้อง */
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll;
+    background-size: cover !important;
+    display: block;
+    z-index: -1; /* ให้อยู่ข้างหลังเนื้อหาหลัก */
+  }
+  .course-all{
+    display: grid;
+    text-align: center;
+    width: 100%;
+  
+   
+  }
+  .course-all-title{
+    display: grid;
+    justify-items: center;
+    
+  }
+  .course-all-title p{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Prompt", sans-serif;
+    color: #ffe300;
+    text-shadow: rgb(56, 10, 156) 0px 0px 7px;
+  }
+  .course-all-title p:nth-child(2){
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Prompt", sans-serif;
+    color: #ffffff;
+    width: 300px;
+    justify-items: center;
+  }
+  
+  
+  
+  
+  .course-all-box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .course-all-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .course-text {
+    width: 300px;
+    background: linear-gradient(59deg, #ffe933, #fff8be);
+  
+    padding: 10px; /* เพิ่ม padding รอบข้อความ */
+    width: 100%; /* ทำให้พื้นหลังสีครอบคลุมเต็มความกว้าง */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+    
+  
+  }
+  .course-all p{
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "Prompt", sans-serif;
+    margin-bottom: 10px;
+  }
+  .course-all p:nth-child(2){
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Prompt", sans-serif;
+  }
+  .course-all-item img{
+    width: 100%;
+    
+  }
+  .course-all.mobile{
+    display: grid;
+  }
+  .course-all.com{
+    display: none;
+  }
+  .container-apply.com1{
+    display: none;
+  }
+}

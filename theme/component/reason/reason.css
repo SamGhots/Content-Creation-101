@@ -1,0 +1,263 @@
+.container-reason{
+  display: grid;
+  justify-items: center;
+  position: relative;
+  z-index: 0;
+
+  
+}
+.container-reason::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./../../img/reason-01.avif'); /* ตรวจสอบว่าเส้นทางนี้ถูกต้อง */
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll;
+  background-size: cover !important;
+  display: block;
+  z-index: -1; /* ให้อยู่ข้างหลังเนื้อหาหลัก */
+}
+.reason{
+  display: grid;
+  justify-items: center;
+  width: 100%; /* ตั้งค่าให้ใช้ 100% ของความกว้างของ container */
+}
+.reason-title{
+  display: flex;
+  align-items: center
+}
+.reason-number {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  transform: scaleY(1.3); /* ยืดตัวเลขในแนวตั้ง */
+
+
+}
+.reason-number p{
+  font-family: "Roboto", sans-serif;
+  font-size: 145px;
+  color: #6930e2;
+  font-weight: 700;
+  
+}
+.reason-text{
+ 
+  display: grid;
+  font-size: 35px;
+  font-weight: 700;
+  color: #6930e2;
+  margin-top: 68px;
+}
+.reason-text p{
+  font-size: 48px;
+  padding-left: 41px;
+  position: absolute;
+  top: 59px;
+
+}
+.reason-text span {
+
+  font-size: 45px;
+  font-weight: 700;
+  color: #FFE933;
+  padding: 3px 10px 0px 10px;
+  
+  background-image: linear-gradient(303deg, #6930e2, #b796ff);
+}
+
+.reason-box{
+  margin-top: 20px;
+}
+.reason-item{
+  padding: 20px;
+  display: flex;
+  background-color: #7f43ff;
+}
+.reason-item.white{
+  background-color: #ffffff;
+}
+.reason-item p{
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Prompt", sans-serif;
+}
+.reason-item.white p{
+ 
+  color: #000000;
+ 
+}
+.reason-item img{
+  margin-right: 10px;
+width: 68px;
+height: 68px;
+}
+.apply-study.btn-white.small{
+font-size: 15px;
+}
+
+
+.reason-box.mobile{
+  display: none;
+}
+.reason-box.com{
+  margin-top: 40px;
+  margin-bottom: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px
+  ;
+}
+.reason-item{
+  margin-bottom: 5px;
+}
+.reason-item.item1{
+  border-top-left-radius:33px ;
+}
+.reason-item.white.item2{
+ border-bottom-left-radius:33px ;
+}
+.reason-item.item3{
+border-top-right-radius:33px ;
+}
+.reason-item.item4{
+  border-bottom-right-radius:33px ;
+ }
+
+.reason-box.com .reason-item p{
+  font-size: clamp(13px, 1.5vw, 20px);
+
+}
+  .container-apply.mobile{
+  display: none;
+   } 
+   .container-apply.com{
+    margin-bottom: 160px;
+     } 
+     
+  @media (max-width: 763px) {
+    .container-reason{
+      display: grid;
+      justify-items: center;
+      position: relative;
+      z-index: 0;
+    
+      
+    }
+    .container-reason::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('./../../img/reason-01.avif'); /* ตรวจสอบว่าเส้นทางนี้ถูกต้อง */
+      background-position: top center !important;
+      background-repeat: no-repeat !important;
+      background-attachment: scroll;
+      background-size: cover !important;
+      display: block;
+      z-index: -1; /* ให้อยู่ข้างหลังเนื้อหาหลัก */
+    }
+    .reason{
+      display: grid;
+      justify-items: center;
+      width: 100%; /* ตั้งค่าให้ใช้ 100% ของความกว้างของ container */
+    }
+    .reason-title{
+      display: flex;
+      align-items: center
+    }
+    .reason-number {
+      position: relative;
+      top: 20px;
+      left: 10px;
+      transform: scaleY(1.3); /* ยืดตัวเลขในแนวตั้ง */
+    
+    
+    }
+    .reason-number p{
+      font-family: "Roboto", sans-serif;
+      font-size: 89px;
+      color: #6930e2;
+      font-weight: 700;
+      
+    }
+    .reason-text{
+     
+      display: grid;
+      font-size: 35px;
+      font-weight: 700;
+      color: #6930e2;
+      margin-top: 68px;
+    }
+    .reason-text p{
+      font-size: 35px;
+      padding-left: 15px;
+      position: absolute;
+      top: 48px;
+    
+    }
+    .reason-text span{
+    
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFE933;
+      padding: 3px 10px 0px 10px;
+      
+      background-image: linear-gradient(303deg, #6930e2, #b796ff);
+    }
+    
+    .reason-box{
+      margin-top: 20px;
+    }
+    .reason-item{
+      padding: 10px;
+      display: flex;
+      background-color: #7f43ff;
+    }
+    .reason-item.white{
+      background-color: #ffffff;
+    }
+    .reason-item p{
+      font-size: 13px;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: "Prompt", sans-serif;
+    }
+    .reason-item.white p{
+     
+      color: #000000;
+     
+    }
+    .reason-item img{
+      margin-right: 10px;
+    width: 68px;
+    height: 68px;
+    }
+    .reason-box.com{
+      display: none;
+    }
+    .reason-box.mobile{
+      display: block;
+    }
+
+ .container-apply.com {
+display: none;
+ } 
+ .container-apply.mobile {
+  display: grid;
+   } 
+    }
+    @media (max-width: 330px) {
+      .reason-text p{
+        top: 38px;
+      
+      }
+    
+      }

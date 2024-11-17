@@ -1,0 +1,242 @@
+.container-review{
+  display: grid;
+  justify-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.container-review::before {
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./../../img/review-03.jpg');
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll;
+  background-size: cover !important;
+  display: block;
+  z-index: -1;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, .79);
+  background-blend-mode: overlay; /* ผสมผสานสีพื้นหลังกับภาพ */
+}
+
+.review {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  width: 100%;
+
+}
+
+.review-title p{
+ font-size: 30px;
+ font-weight: 700;
+ color: #7f43ff;
+ font-family: "Prompt", sans-serif;
+}
+
+.review-box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.review-item {
+  display: flex;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.review-item-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border-right: 1px solid #eee;
+}
+
+.review-item-img img {
+  max-width: 100px;
+  margin: 10px 0;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.stars img {
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+}
+
+.review-item-text {
+  padding: 20px;
+  flex: 1;
+}
+
+.review-item-text p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  font-family: "Prompt", sans-serif;
+}
+
+.review-item-text span {
+  font-size: 14px;
+  color: #9a70f6;
+  font-weight: 700;
+  font-family: "Prompt", sans-serif;
+}
+
+/*com*/
+
+.review.mobile{
+  display: none;
+}
+
+.review-box.com{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.review-title.com p{
+  font-size: 44px;
+}
+@media (max-width: 763px) {
+  .container-review{
+    display: grid;
+    justify-items: center;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .container-review::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  /*  background-image: -webkit-linear-gradient(180deg, #ffffff, #7f43ff);*/
+  
+  
+    /* ตรวจสอบว่าเส้นทางนี้ถูกต้อง */
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll;
+    background-size: cover !important;
+    display: block;
+    z-index: -1;
+    /* ให้อยู่ข้างหลังเนื้อหาหลัก */
+  
+  
+    background-color:transparent;
+    background-image: -webkit-linear-gradient(153deg,#ffffff,#e3d7ff);
+    background-image: -moz-linear-gradient(153deg,#ffffff,#e3d7ff);
+    background-image: -ms-linear-gradient(153deg,#ffffff,#e3d7ff);
+    background-image: -o-linear-gradient(153deg,#ffffff,#e3d7ff);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',endColorstr='#e3d7ff' );
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e3d7ff' );";
+    background-image: linear-gradient(153deg,#ffffff,#e3d7ff);
+   
+  
+  }
+  
+  .review {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    width: 100%;
+  
+  }
+  
+  .review-title p{
+   font-size: 30px;
+   font-weight: 700;
+   color: #7f43ff;
+   font-family: "Prompt", sans-serif;
+  }
+  
+  .review-box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .review-item {
+    display: flex;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .review-item-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-right: 1px solid #eee;
+  }
+  
+  .review-item-img img {
+    max-width: 100px;
+    margin: 10px 0;
+  }
+  
+  .stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .stars img {
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+  }
+  
+  .review-item-text {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .review-item-text p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    font-family: "Prompt", sans-serif;
+  }
+  
+  .review-item-text span {
+    font-size: 14px;
+    color: #9a70f6;
+    font-weight: 700;
+    font-family: "Prompt", sans-serif;
+  }
+  .review.com{
+    display:none;
+  }
+  .review.mobile{
+    display: grid;
+  }
+}

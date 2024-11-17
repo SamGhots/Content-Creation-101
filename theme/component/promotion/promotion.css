@@ -1,0 +1,62 @@
+.promotion{
+  display: grid;
+  text-align: center;
+  background-color: #f5b700;
+  white-space: nowrap; /* ป้องกันการแยกบรรทัด */
+}
+.promotion h1{
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.promotion p {
+  font-size: 22px;
+  font-weight: 300;
+}
+.promotion span{
+  color: red;
+  font-weight: 700;
+}
+.expires{
+  color: red;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 700;
+
+}
+
+
+@media (max-width: 768px) {
+  .promotion h1{
+    font-size: 20px;
+  }
+  .promotion p {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .promotion span{
+    color: red;
+    font-weight: 700;
+  }
+  .expires{
+    color: red;
+    font-size: 15px !important;
+    margin-top: 10px !important;
+    font-weight: 700 !important;
+  }
+}  
+
+@media (max-width: 375px) {
+  .promotion h1 {
+    font-size:clamp(14px,8vw, 20px);
+  }
+  .promotion p {
+    font-size:clamp(12px,4vw, 17px);
+    font-weight: 300;
+  }
+  .expires{
+    color: red;
+    font-size:clamp(4px,4vw, 8px);
+   
+  }
+}
+

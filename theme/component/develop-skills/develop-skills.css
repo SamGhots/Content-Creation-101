@@ -1,0 +1,476 @@
+.container-skills{
+  position: relative; /* ต้องกำหนด position */
+  z-index: 0; /* เพื่อให้ pseudo-element อยู่ข้างหลังเนื้อหาหลัก */
+
+}
+
+.container-skills::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./../../img/develop-skills-01.jpg');
+  background-position: center center !important; /* จัดตำแหน่งภาพตรงกลาง */
+  background-repeat: no-repeat !important;
+  background-attachment: scroll;
+  background-size: cover !important; /* ปรับขนาดภาพให้เต็มพื้นที่ */
+  display: block;
+  z-index: -1; 
+}
+
+
+.develop-skills{
+  display: grid;
+  text-align: center;
+
+  white-space: nowrap; /* ป้องกันการแยกบรรทัด */
+  overflow: hidden; /* ซ่อนส่วนเกินของ pseudo-element ถ้ามี */
+}
+
+.develop-skills-box{
+  display: flex;
+  justify-content: space-around;
+  
+  padding-bottom: 30px;
+
+}
+.develop-skills span{
+  font-size: 34px;
+  color: #9a70f6;
+}
+.develop-skills  b{
+  color: #6930E2;
+}
+
+.develop-skills p {
+  color: #7f43ff;
+  font-size: 31px;
+  font-weight: 700;
+}
+
+.develop-skills p:nth-of-type(2) {
+  color: #282828;
+  font-size: 19px;
+  font-weight :400;
+}
+
+
+.develop-skills p:nth-of-type(3) b {
+  color: #282828;
+  font-size: 20px;
+  font-weight: 700;
+}
+.develop-skills p:nth-of-type(4) {
+  color: #282828;
+  font-size: 20px;
+  font-weight :400;
+}
+.logo img{
+ width: 120px;
+ 
+}
+
+.lesson{
+  display: flex;
+  justify-content: center
+
+}
+.box-lesson {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* สร้าง 2 คอลัมน์ */
+  background-color: #f5B700;
+  max-width: 474px;
+  border-radius: 17px;
+  gap: 10px; /* ระยะห่างระหว่างคอลัมน์ */
+  justify-items: center;
+  padding: 10px;
+}
+
+.box-lesson li b{
+font-size: 23px;
+color: #2b2b2b;
+font-weight: 700;
+}
+.box-lesson ul {
+  display: grid;
+  list-style: none; /* ลบสัญลักษณ์ */
+  padding: 0; /* ลบ padding */
+  margin: 0; /* ลบ margin */
+  justify-items: start;
+}
+.box-lesson li {
+  
+
+  position: relative; /* สำหรับการวางตำแหน่งจุด */
+  margin-left: 20px; /* ระยะห่างจากขอบซ้าย */
+}
+
+.box-lesson li::before {
+  content: '•'; /* เพิ่มสัญลักษณ์จุด */
+  position: absolute;
+  left: -20px; /* ตำแหน่งจุด */
+  font-size: 10px; /* ขนาดจุด */
+  color: black; /* สีจุด */
+}
+
+
+
+.apply-study {
+  padding: 10px 40px;
+  
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px; /* เพิ่มขอบโค้งมน */
+  transition: background 0.3s ease; /* เพิ่มการเปลี่ยนแปลงเรียบ */
+  width: 280px;
+  box-sizing: border-box; /* รวม padding และ border ในขนาดของปุ่ม */
+  margin: 10px; /* เพิ่มช่องว่างรอบปุ่ม */
+  transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* เพิ่มการเปลี่ยนแปลงเรียบ */
+}
+
+.btn-yellow {
+  background: linear-gradient(98deg, rgb(255, 233, 51), rgb(255, 177, 0));
+  box-shadow: 0px 4px 6px rgba(171, 5, 231, 0.755); /* เพิ่มเงา */
+  border: 2px solid white; /* เพิ่มกรอบสีขาว */
+  color: black;
+  font-size: 27px;
+}
+.btn-yellow:hover {
+  background: linear-gradient(98deg, rgb(255, 255, 102), rgb(255, 204, 51));
+  border: 2px solid white; /* เพิ่มกรอบสีขาว */
+}
+.btn-white{
+background-color: #fff;
+border: 2px solid #7f43ff; /* เพิ่มกรอบสีขาว */
+color: #7f43ff;
+font-size: 27px;
+
+}
+.btn-white:hover{
+  color: #7f43ffb0;
+}
+.container-apply{
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+
+@media (max-width: 2000px) {
+.logo.mobile{
+  display: none;
+}
+}
+/*ขนาดหน้าจอโมบาย*/
+   @media (max-width: 763px) {
+    .develop-skills{
+      display: grid;
+      text-align: center;
+    
+      white-space: nowrap; /* ป้องกันการแยกบรรทัด */
+      overflow: hidden; /* ซ่อนส่วนเกินของ pseudo-element ถ้ามี */
+    }
+    .develop-skills-box{
+      padding-bottom: 0px;
+      display: grid;
+      justify-content: center
+    }
+
+
+    .develop-skills span{
+      font-size: 20px;
+      color: #9a70f6;
+    }
+    .develop-skills  b{
+      color: #6930E2;
+    }
+    
+    .develop-skills p {
+      color: #7f43ff;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    
+    .develop-skills p:nth-of-type(2) {
+      color: #282828;
+      font-size: 12px;
+      font-weight :400;
+    }
+    
+    
+    .develop-skills p:nth-of-type(3) b {
+      color: #282828;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .develop-skills p:nth-of-type(4) {
+      color: #282828;
+      font-size: 14px;
+      font-weight :400;
+    }
+    .logo img{
+     width: 120px;
+     
+    }
+    
+    .lesson{
+      display: flex;
+      justify-content: center
+    
+    }
+    .box-lesson {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* สร้าง 2 คอลัมน์ */
+      background-color: #f5B700;
+      max-width: 350px;
+      border-radius: 17px;
+      gap: 10px; /* ระยะห่างระหว่างคอลัมน์ */
+      justify-items: center;
+      padding: 10px;
+    }
+    
+    .box-lesson li b{
+    font-size: 15px;
+    color: #2b2b2b;
+    font-weight: 700;
+    }
+    .box-lesson ul {
+      display: grid;
+      list-style: none; /* ลบสัญลักษณ์ */
+      padding: 0; /* ลบ padding */
+      margin: 0; /* ลบ margin */
+      justify-items: start;
+    }
+    .box-lesson li {
+      
+    
+      position: relative; /* สำหรับการวางตำแหน่งจุด */
+      margin-left: 20px; /* ระยะห่างจากขอบซ้าย */
+    }
+    
+    .box-lesson li::before {
+      content: '•'; /* เพิ่มสัญลักษณ์จุด */
+      position: absolute;
+      left: -20px; /* ตำแหน่งจุด */
+      font-size: 10px; /* ขนาดจุด */
+      color: black; /* สีจุด */
+    }
+    
+    
+    
+    .apply-study {
+      padding: 10px 40px;
+      
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      border-radius: 20px; /* เพิ่มขอบโค้งมน */
+      transition: background 0.3s ease; /* เพิ่มการเปลี่ยนแปลงเรียบ */
+      width: 280px;
+      box-sizing: border-box; /* รวม padding และ border ในขนาดของปุ่ม */
+      margin: 10px; /* เพิ่มช่องว่างรอบปุ่ม */
+      transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* เพิ่มการเปลี่ยนแปลงเรียบ */
+    }
+    
+    .btn-yellow {
+      background: linear-gradient(98deg, rgb(255, 233, 51), rgb(255, 177, 0));
+      box-shadow: 0px 4px 6px rgba(171, 5, 231, 0.755); /* เพิ่มเงา */
+      border: 2px solid white; /* เพิ่มกรอบสีขาว */
+      color: black;
+    }
+    .btn-yellow:hover {
+      background: linear-gradient(98deg, rgb(255, 255, 102), rgb(255, 204, 51));
+      border: 2px solid white; /* เพิ่มกรอบสีขาว */
+    }
+    .btn-white{
+    background-color: #fff;
+    border: 2px solid #7f43ff; /* เพิ่มกรอบสีขาว */
+    color: #7f43ff;
+    
+    }
+    .btn-white:hover{
+      color: #7f43ffb0;
+    }
+    .container-apply{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }.container-skills{
+      position: relative; /* ต้องกำหนด position */
+      z-index: 0; /* เพื่อให้ pseudo-element อยู่ข้างหลังเนื้อหาหลัก */
+      height: 800px;
+    }
+    .develop-skills{
+      display: grid;
+      text-align: center;
+    
+      white-space: nowrap; /* ป้องกันการแยกบรรทัด */
+      overflow: hidden; /* ซ่อนส่วนเกินของ pseudo-element ถ้ามี */
+    }
+    .container-skills::before {
+      content: ""; /* จำเป็นต้องใส่เพื่อให้ pseudo-element ปรากฏ */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('./../../img/content-01.jpg'); /* ตรวจสอบว่าเส้นทางนี้ถูกต้อง */
+      background-position: top center !important;
+      background-repeat: no-repeat !important;
+      background-attachment: scroll;
+      background-size: cover !important;
+      display: block;
+      z-index: -1; /* ให้อยู่ข้างหลังเนื้อหาหลัก */
+    
+    }
+    
+    .develop-skills span{
+      font-size: 20px;
+      color: #9a70f6;
+    }
+    .develop-skills  b{
+      color: #6930E2;
+    }
+    
+    .develop-skills p {
+      color: #7f43ff;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    
+    .develop-skills p:nth-of-type(2) {
+      color: #282828;
+      font-size: 12px;
+      font-weight :400;
+    }
+    
+    
+    .develop-skills p:nth-of-type(3) b {
+      color: #282828;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .develop-skills p:nth-of-type(4) {
+      color: #282828;
+      font-size: 14px;
+      font-weight :400;
+    }
+    .logo img{
+     width: 120px;
+     
+    }
+    
+    .lesson{
+      display: flex;
+      justify-content: center
+    
+    }
+    .box-lesson {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* สร้าง 2 คอลัมน์ */
+      background-color: #f5B700;
+      max-width: 350px;
+      border-radius: 17px;
+      gap: 10px; /* ระยะห่างระหว่างคอลัมน์ */
+      justify-items: center;
+      padding: 10px;
+    }
+    
+    .box-lesson li b{
+    font-size: 15px;
+    color: #2b2b2b;
+    font-weight: 700;
+    }
+    .box-lesson ul {
+      display: grid;
+      list-style: none; /* ลบสัญลักษณ์ */
+      padding: 0; /* ลบ padding */
+      margin: 0; /* ลบ margin */
+      justify-items: start;
+    }
+    .box-lesson li {
+      
+    
+      position: relative; /* สำหรับการวางตำแหน่งจุด */
+      margin-left: 20px; /* ระยะห่างจากขอบซ้าย */
+    }
+    
+    .box-lesson li::before {
+      content: '•'; /* เพิ่มสัญลักษณ์จุด */
+      position: absolute;
+      left: -20px; /* ตำแหน่งจุด */
+      font-size: 10px; /* ขนาดจุด */
+      color: black; /* สีจุด */
+    }
+    
+    
+    
+    .apply-study {
+      padding: 10px 40px;
+      
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      border-radius: 20px; /* เพิ่มขอบโค้งมน */
+      transition: background 0.3s ease; /* เพิ่มการเปลี่ยนแปลงเรียบ */
+      width: 280px;
+      box-sizing: border-box; /* รวม padding และ border ในขนาดของปุ่ม */
+      margin: 10px; /* เพิ่มช่องว่างรอบปุ่ม */
+      transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* เพิ่มการเปลี่ยนแปลงเรียบ */
+    }
+    
+    .btn-yellow {
+      background: linear-gradient(98deg, rgb(255, 233, 51), rgb(255, 177, 0));
+      box-shadow: 0px 4px 6px rgba(171, 5, 231, 0.755); /* เพิ่มเงา */
+      border: 2px solid white; /* เพิ่มกรอบสีขาว */
+      color: black;
+    }
+    .btn-yellow:hover {
+      background: linear-gradient(98deg, rgb(255, 255, 102), rgb(255, 204, 51));
+      border: 2px solid white; /* เพิ่มกรอบสีขาว */
+    }
+    .btn-white{
+    background-color: #fff;
+    border: 2px solid #7f43ff; /* เพิ่มกรอบสีขาว */
+    color: #7f43ff;
+    
+    }
+    .btn-white:hover{
+      color: #7f43ffb0;
+    }
+    .container-apply{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .logo.com{
+      display: none;
+    }
+    .logo.mobile {
+      display: block; /* แสดงในหน้าจอที่กว้างน้อยกว่า 768px */
+    }
+    
+} 
+
+@media (max-width: 375px) {
+
+.box-lesson li b{
+  font-size:clamp(12px,4vw, 15px);
+  font-weight: 700;
+ 
+}
+}
+
+

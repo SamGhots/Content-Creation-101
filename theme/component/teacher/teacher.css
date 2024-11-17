@@ -1,0 +1,386 @@
+.container-teacher {
+  display: grid;
+  justify-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.container-teacher::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./../../img/teacher-01.jpg');
+  /* ตรวจสอบว่าเส้นทางนี้ถูกต้อง */
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll;
+  background-size: cover !important;
+  display: block;
+  z-index: -1;
+  /* ให้อยู่ข้างหลังเนื้อหาหลัก */
+}
+
+.teacher {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  width: 100%;
+
+}
+
+.teacher-title {
+  display: grid;
+  grid-template-columns: 208px 98px;
+
+ 
+}
+
+.teacher-title p:nth-child(1) {
+  font-size: 28px;
+  color: #ffe300;
+  text-shadow: 0 0 11px #2a0677;
+  font-family: "Prompt", sans-serif;
+}
+
+.teacher-title p:nth-child(2) {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Prompt", sans-serif;
+}
+
+
+.teacher-title span {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Prompt", sans-serif;
+}
+.teacher-title img{
+  position: relative;
+  top: -8px;
+  right: 38px;
+  z-index: 0;
+  
+}
+
+
+
+.teacher-item{
+  display: grid;
+grid-template-columns: 76px 1fr;
+
+height: 100px;
+margin-bottom: 20px;
+}
+.teacher-item-text{
+  background-color: #7f43ff;
+  box-shadow: 0 0 5px rgba(105, 48, 226, .43);
+  text-align: start;
+  height: 100px;
+  border: 1.6px solid #ffffff;
+  padding: 10px 30px 10px 60px;
+ border-radius: 24px;
+}
+.teacher-item-text p:nth-child(1){
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(255, 233, 51);
+  font-family: "Prompt", sans-serif;
+}
+.teacher-item-text p:nth-child(2){
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Prompt", sans-serif;
+}
+
+.teacher-item-text p:nth-child(2) span{
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Prompt", sans-serif;
+}
+
+.teacher-item img{
+  z-index: 1;
+  position: relative;
+  top: -13px;
+  left: 2px;
+  
+}
+.teacher-item.letf{
+  grid-template-columns:  1fr 76px;
+}
+.teacher-item-img.letf img{
+  z-index: 1;
+  position: relative;
+  top: -14px;
+  left: -59px;
+  display: block;
+}
+.teacher-item-text.letf{
+  padding: 10px 60px 10px 30px;
+}
+.teacher.mobile{
+  display: none;
+}
+/*com*/
+.teacher-title-com p:nth-child(1) {
+  font-size: 44px;
+  color: #ffe300;
+  text-shadow: 0 0 11px #2a0677;
+  font-family: "Prompt", sans-serif;
+}
+.teacher-title-com p:nth-child(2) {
+font-size: 25px;
+  color: #ffffff;
+
+  font-family: "Prompt", sans-serif;
+}
+.teacher-container-com{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  width: 80%;
+  gap: 30px
+  ;
+  margin-top: 50px;
+}
+.teacher-item-com{
+ 
+}
+.teacher-box-com{
+height: 225px;
+  border-radius: 29px;
+  padding: 0px 10px 10px 10px;
+  background-color: #ffffff;
+}
+.teacher-img-com{
+  height: 85px;
+  position: relative;
+  top: -46px;
+
+}
+.teacher-name-com  p{
+
+font-size: 18px;
+color: #ffe933;
+  font-family: "Prompt", sans-serif;
+  background-color: #7f43ff;
+  border-radius: 10px;
+margin-bottom: 5px;
+  
+}
+.teacher-position-com{
+  font-size: 18px;
+  color: #000000;
+    font-family: "Prompt", sans-serif;
+     
+}
+.teacher-at-com{
+  margin-top: 10px;
+}
+.teacher-at-com span{
+  font-size: 18px;
+ font-weight: 700;
+}
+.teacher-item-com.item2{
+  margin-top: 60px;
+}
+
+.teacher-item-com.item4{
+  position: relative;
+  left: 142px;
+} 
+.teacher-item-com.item6 {
+  position: relative;
+  right: 142px;
+}
+@media (max-width:1340px) {
+  .teacher-box-com {
+    height: 243px;
+  }
+}
+/*com*/
+@media (max-width:1188px) {
+  .teacher.com{
+    display: none;
+  }
+  .teacher.mobile{
+    display: grid;
+  }
+  .teacher-title{
+    display: none;
+  }
+  .teacher-title-com{
+    margin-bottom: 20px;
+  }
+}
+
+
+
+@media (max-width:763px) {
+  .container-teacher {
+    display: grid;
+    justify-items: center;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .container-teacher::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./../../img/content-all-01.jpg');
+    /* ตรวจสอบว่าเส้นทางนี้ถูกต้อง */
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll;
+    background-size: cover !important;
+    display: block;
+    z-index: -1;
+    /* ให้อยู่ข้างหลังเนื้อหาหลัก */
+  }
+  
+  .teacher {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    width: 100%;
+  
+  }
+  
+  .teacher-title {
+    display: grid;
+    grid-template-columns: 208px 98px;
+  
+   
+  }
+  
+  .teacher-title p:nth-child(1) {
+    font-size: 28px;
+    color: #ffe300;
+    text-shadow: 0 0 11px #2a0677;
+    font-family: "Prompt", sans-serif;
+  }
+  
+  .teacher-title p:nth-child(2) {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Prompt", sans-serif;
+  }
+  
+  
+  .teacher-title span {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Prompt", sans-serif;
+  }
+  .teacher-title img{
+    position: relative;
+    top: -8px;
+    right: 38px;
+    z-index: 0;
+    
+  }
+  
+  
+  
+  .teacher-item{
+    display: grid;
+  grid-template-columns: 76px 1fr;
+  
+  height: 100px;
+  margin-bottom: 20px;
+  }
+  .teacher-item-text{
+    background-color: #7f43ff;
+    box-shadow: 0 0 5px rgba(105, 48, 226, .43);
+    text-align: start;
+    height: 100px;
+    border: 1.6px solid #ffffff;
+    padding: 10px 30px 10px 60px;
+   border-radius: 24px;
+  }
+  .teacher-item-text p:nth-child(1){
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 233, 51);
+    font-family: "Prompt", sans-serif;
+  }
+  .teacher-item-text p:nth-child(2){
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: "Prompt", sans-serif;
+  }
+  
+  .teacher-item-text p:nth-child(2) span{
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: "Prompt", sans-serif;
+  }
+  
+  .teacher-item img{
+    z-index: 1;
+    position: relative;
+    top: -13px;
+    left: 2px;
+    
+  }
+  .teacher-item.letf{
+    grid-template-columns:  1fr 76px;
+  }
+  .teacher-item-img.letf img{
+    z-index: 1;
+    position: relative;
+    top: -14px;
+    left: -59px;
+    display: block;
+  }
+  .teacher-item-text.letf{
+    padding: 10px 60px 10px 30px;
+  }
+.teacher.mobile{
+  display: grid !important;
+}
+.teacher.com{
+  display: none;
+}
+.teacher-title-com{
+  display: none;
+}
+  }
+
+
+  @media (max-width:363px) {
+    .teacher-item-text.letf{
+  
+      padding: 10px 50px 10px 10px;
+   
+    } 
+  }@media (max-width:358px) {
+    .teacher-item-text{
+      padding: 10px 10px 10px 60px;
+   
+    } 
+  }
+  
+  @media (max-width:347px) {
+  
+  
+  .teacher-title {
+    grid-template-columns: 208px 80px;
+  }
+  
+  }

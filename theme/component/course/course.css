@@ -1,0 +1,445 @@
+.container-course{
+  display: grid;
+ 
+justify-items: center;
+  position: relative;
+  z-index: 0;
+  
+}
+.container-course::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./../../img/course-02.jpg'); /* ตรวจสอบว่าเส้นทางนี้ถูกต้อง */
+  background-position: center center !important; /* จัดตำแหน่งภาพตรงกลาง */
+  background-repeat: no-repeat !important;
+  background-attachment: scroll;
+  background-size: cover !important;
+  display: block;
+  z-index: -1; /* ให้อยู่ข้างหลังเนื้อหาหลัก */
+}
+.course{
+  display: grid;
+  grid-template-columns: 532px 348px;
+
+  gap: 60px;
+  text-align: center;
+  justify-content: center;
+  width: 100%; 
+}
+.course p:nth-child(1) span {
+  color: rgb(255, 211, 0);
+ font-weight: bold;
+  font-size: 32px;
+  font-weight: 700;
+}
+.course p:nth-child(2) span {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.course p:nth-child(3) span {
+  color: rgb(255, 211, 0);
+ font-weight: bold;
+  font-size: 51px;
+  font-weight: 700;
+  text-shadow: 0 0 7px rgba(43, 6, 121, .53);
+}
+
+.rounded-border {
+padding: 5px 10px 5px 10px;
+  border: 2px solid #ffffff; /* กำหนดความหนาและสีของกรอบ */
+  border-radius: 15px; /* ทำให้มุมของกรอบเป็นรูปโค้งมน */
+  color: #fec730;
+ font-size: 28px;
+  text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+.discount{
+  margin: 10px 0px;
+  background-image: linear-gradient(100deg, #f9b10b, #ffc933);
+  border: none;
+}
+.rounded-border.discount{
+  padding: 8px;
+}
+.rounded-border.discount p {
+  
+  font-size: 22px;
+  font-weight: 400;
+  color: #202020;
+}
+.rounded-border.discount span {
+  font-size: 22px !important; 
+  font-weight: 700 !important; /* น้ำหนักฟอนต์เป็น 700 (ตัวหนา) */
+  color: #202020 !important; /* สีของข้อความเป็น #202020 (สีเทาเข้ม) */
+}
+
+.rounded-border .only-left{
+ margin-bottom: 5px;
+  background-color: #ffd82f;
+}
+
+.rounded-border.only-left p {
+  font-size: 45px;
+  font-weight: 400;
+  color: #202020;
+  text-shadow: 0 0 5px #f88c00;
+}
+.rounded-border.only-left span{
+  font-size: 45px !important;;
+  font-weight: 700 !important;;
+  color: #202020 !important;;
+}
+.rounded-border.discount p:nth-child(3) span {
+  font-style: italic; /* ทำให้ข้อความใน <span> ตัวเอียง */
+  text-decoration: line-through; /* ขีดฆ่าข้อความใน <span> */
+}
+.form-course{
+  display: grid;
+  background-color: rgba(5, 5, 5, .61);
+  padding: 10px;
+  border-radius: 15px;
+ 
+}
+.form-course p:nth-child(1) span{
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px #000;
+}
+.form-container{
+  text-align: start;
+  padding: 20px;
+}
+.form-course p:nth-child(2) span{
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px #000;
+}
+.form-container{
+  padding: 10px 20px 20px 20px;
+}
+.form-container  form label{
+  font-size: 12px;
+  color: #fff;
+}
+.checkbox-container {
+  display: flex;
+
+
+
+
+
+}
+.checkbox-container .description {
+  font-size: 13px;
+  color: #FFFD00; /* เปลี่ยนเป็นสีที่คุณต้องการ */
+}
+.checkmark{
+  margin-left: 10px;
+}
+.agreement p{
+font-size: 8px;
+color: #fff;
+}
+.agreement a{
+  font-size: 8px;
+  color: #fff;
+  }
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #ff2e5b;
+
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  font-size: 28px;
+  border: none;
+  border-radius: 42px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.form-container input[type="text"]::placeholder,
+.form-container input[type="email"]::placeholder {
+  font-size: 14px;
+  color: #202020; /* เปลี่ยนสีของ placeholder */
+  text-align: center; /* จัดตำแหน่ง placeholder ให้อยู่ตรงกลาง */
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+@media (max-width: 458px) {
+  input[type=submit]{
+    font-size: clamp(18px, 5vw, 28px);
+  }
+ 
+
+
+}
+ @media (max-width: 763px) {
+  .container-course{
+    display: grid;
+   
+  justify-items: center;
+    position: relative;
+    z-index: 0;
+    
+  }
+  .container-course::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./../../img/course-01.jpg'); /* ตรวจสอบว่าเส้นทางนี้ถูกต้อง */
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll;
+    background-size: cover !important;
+    display: block;
+    z-index: -1; /* ให้อยู่ข้างหลังเนื้อหาหลัก */
+  }
+  .course{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr !important; /* เปลี่ยนเป็นคอลัมน์เดียว */
+    gap: 0; /* ปรับระยะห่างเป็น 0 หรือค่าอื่น ๆ */
+    width: 100%; 
+  }
+  .course p:nth-child(1) span {
+    color: rgb(255, 211, 0);
+   font-weight: bold;
+    font-size: 20px ;
+    font-weight: 700;
+  }
+  .course p:nth-child(2) span {
+    color: #fff;
+    font-size: 18px ;
+    font-weight: 700;
+  }
+  
+  .course p:nth-child(3) span {
+    color: rgb(255, 211, 0);
+   font-weight: bold;
+    font-size: 28px ;
+    font-weight: 700;
+    text-shadow: 0 0 7px rgba(43, 6, 121, .53);
+  }
+  
+  .rounded-border {
+  padding: 5px 10px 5px 10px;
+    border: 2px solid #ffffff; /* กำหนดความหนาและสีของกรอบ */
+    border-radius: 15px; /* ทำให้มุมของกรอบเป็นรูปโค้งมน */
+    color: #fec730;
+   font-size: 15px !important;
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+  }
+  .discount{
+    margin: 10px 0px;
+    background-image: linear-gradient(100deg, #f9b10b, #ffc933);
+    border: none;
+  }
+  .rounded-border.discount{
+    padding: 8px;
+  }
+  .rounded-border.discount p {
+    
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #202020;
+  }
+  .rounded-border.discount span {
+    font-size: 14px !important; /* ขนาดฟอนต์ 14px */
+    font-weight: 700 !important; /* น้ำหนักฟอนต์เป็น 700 (ตัวหนา) */
+    color: #202020 !important; /* สีของข้อความเป็น #202020 (สีเทาเข้ม) */
+  }
+  
+  .rounded-border .only-left{
+   margin-bottom: 5px;
+    background-color: #ffd82f;
+  }
+  
+  .rounded-border.only-left p {
+    font-size: 27px !important;
+    font-weight: 400;
+    color: #202020;
+    text-shadow: 0 0 5px #f88c00;
+  }
+  .rounded-border.only-left span{
+    font-size: 27px !important;;
+    font-weight: 700 !important;;
+    color: #202020 !important;;
+  }
+  .rounded-border.discount p:nth-child(3) span {
+    font-style: italic; /* ทำให้ข้อความใน <span> ตัวเอียง */
+    text-decoration: line-through; /* ขีดฆ่าข้อความใน <span> */
+  }
+  .form-course{
+    display: grid;
+    background-color: rgba(5, 5, 5, .61);
+    padding: 10px;
+    border-radius: 15px;
+   
+  }
+  .form-course p:nth-child(1) span{
+    font-size: 24px !important;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #000;
+  }
+  .form-container{
+    text-align: start;
+    padding: 20px;
+  }
+  .form-course p:nth-child(2) span{
+    font-size: 24px !important; 
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #000;
+  }
+  .form-container{
+    padding: 10px 20px 20px 20px;
+  }
+  .form-container  form label{
+    font-size: 12px !important;
+    color: #fff;
+  }
+  .checkbox-container {
+    display: flex;
+  
+  
+  
+  
+  
+  }
+  .checkbox-container .description {
+    font-size: 13px !important;
+    color: #FFFD00; /* เปลี่ยนเป็นสีที่คุณต้องการ */
+  }
+  .checkmark{
+    margin-left: 10px;
+  }
+  .agreement p{
+  font-size: 8px !important;
+  color: #fff;
+  }
+  .agreement a{
+    font-size: 8px !important;
+    color: #fff;
+    }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+ 
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #ff2e5b;
+  
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    font-size: 28px ;
+    border: none;
+    border-radius: 42px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .form-container input[type="text"]::placeholder,
+  .form-container input[type="email"]::placeholder {
+    font-size: 14px !important;
+    color: #202020; /* เปลี่ยนสีของ placeholder */
+    text-align: center; /* จัดตำแหน่ง placeholder ให้อยู่ตรงกลาง */
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .course {
+    gap: 0px !important;
+  }
+  
+}
+
+@media (max-width: 1106px) {
+  .course {
+    grid-template-columns: minmax(369px, 532px) minmax(243px, 348px);
+    gap: clamp(30px, 3vw, 60px);
+  }
+  .course p:nth-child(1) span {
+
+    font-size: clamp(20px, 3vw, 32px) ;
+  }
+  
+  .course p:nth-child(2) span {
+
+    font-size: clamp(18px, 3vw, 30px) ;
+  }
+  
+  .course p:nth-child(3) span {
+   
+    font-size: clamp(28px, 3vw, 51px) ;
+  }
+  
+  .rounded-border {
+  
+
+   font-size: clamp(14px, 3vw, 24px) ;
+    
+  }
+  
+  .rounded-border.discount p {
+  
+   
+    font-size: clamp(14px, 3vw, 22px);
+  }
+  
+  .rounded-border.discount span {
+  
+    font-size: clamp(14px, 3vw, 22px) ;
+  }
+  
+  .rounded-border.only-left p {
+    font-size: clamp(27px, 3vw, 45px) ;
+  }
+  .rounded-border.only-left span{
+   
+    font-size: clamp(27px, 3vw, 45px) ;
+  }
+  
+  .form-course p:nth-child(1) span{
+  
+    font-size: clamp(22px, 3vw, 24px) ;
+   
+  }
+  
+  .form-course p:nth-child(2) span{
+    font-size: clamp(22px, 3vw, 24px) ;
+   
+  }
+
+
+}
